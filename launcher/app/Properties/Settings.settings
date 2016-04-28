@@ -1,5 +1,12 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="app.Properties" GeneratedClassName="Settings">
   <Profiles />
-  <Settings />
+  <Settings>
+    <Setting Name="ExtractInfoPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\work\Marksheet-develop\tsvreader\bin\ExtractInfo.jar</Value>
+    </Setting>
+    <Setting Name="OutputPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\work\Marksheet-develop\workspace\test.csv</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

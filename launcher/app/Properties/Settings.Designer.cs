@@ -22,5 +22,29 @@ namespace app.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\work\\Marksheet-develop\\tsvreader\\bin\\ExtractInfo.jar")]
+        public string ExtractInfoPath {
+            get {
+                return ((string)(this["ExtractInfoPath"]));
+            }
+            set {
+                this["ExtractInfoPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\work\\Marksheet-develop\\workspace\\test.csv")]
+        public string OutputPath {
+            get {
+                return ((string)(this["OutputPath"]));
+            }
+            set {
+                this["OutputPath"] = value;
+            }
+        }
     }
 }

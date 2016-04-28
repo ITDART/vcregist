@@ -36,9 +36,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.selectFile = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtOutputPath = new System.Windows.Forms.TextBox();
             this.result = new System.Windows.Forms.TextBox();
+            this.txtTSVReader = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.selectJar = new System.Windows.Forms.PictureBox();
+            this.selectOutputPath = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.selectFile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectJar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectOutputPath)).BeginInit();
             this.SuspendLayout();
             // 
             // selectDate
@@ -54,7 +60,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(396, 145);
+            this.button1.Location = new System.Drawing.Point(396, 193);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 39);
             this.button1.TabIndex = 1;
@@ -93,10 +99,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("メイリオ", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.Location = new System.Drawing.Point(0, 104);
+            this.label3.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label3.Location = new System.Drawing.Point(46, 119);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 30);
+            this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "出力ファイル";
             // 
@@ -111,22 +117,62 @@
             this.selectFile.TabStop = false;
             this.selectFile.Click += new System.EventHandler(this.selectFile_Click);
             // 
-            // textBox1
+            // txtOutputPath
             // 
-            this.textBox1.Font = new System.Drawing.Font("メイリオ", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.textBox1.Location = new System.Drawing.Point(139, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(353, 39);
-            this.textBox1.TabIndex = 8;
+            this.txtOutputPath.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtOutputPath.Location = new System.Drawing.Point(139, 116);
+            this.txtOutputPath.Name = "txtOutputPath";
+            this.txtOutputPath.Size = new System.Drawing.Size(353, 27);
+            this.txtOutputPath.TabIndex = 8;
             // 
             // result
             // 
-            this.result.Location = new System.Drawing.Point(5, 148);
+            this.result.Location = new System.Drawing.Point(5, 196);
             this.result.Multiline = true;
             this.result.Name = "result";
             this.result.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.result.Size = new System.Drawing.Size(385, 36);
             this.result.TabIndex = 9;
+            // 
+            // txtTSVReader
+            // 
+            this.txtTSVReader.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txtTSVReader.Location = new System.Drawing.Point(139, 148);
+            this.txtTSVReader.Name = "txtTSVReader";
+            this.txtTSVReader.Size = new System.Drawing.Size(353, 27);
+            this.txtTSVReader.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label4.Location = new System.Drawing.Point(46, 150);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 20);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "TSV Reader";
+            // 
+            // selectJar
+            // 
+            this.selectJar.Image = ((System.Drawing.Image)(resources.GetObject("selectJar.Image")));
+            this.selectJar.Location = new System.Drawing.Point(498, 148);
+            this.selectJar.Name = "selectJar";
+            this.selectJar.Size = new System.Drawing.Size(22, 22);
+            this.selectJar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.selectJar.TabIndex = 12;
+            this.selectJar.TabStop = false;
+            this.selectJar.Click += new System.EventHandler(this.selectJar_Click);
+            // 
+            // selectOutputPath
+            // 
+            this.selectOutputPath.Image = ((System.Drawing.Image)(resources.GetObject("selectOutputPath.Image")));
+            this.selectOutputPath.Location = new System.Drawing.Point(498, 119);
+            this.selectOutputPath.Name = "selectOutputPath";
+            this.selectOutputPath.Size = new System.Drawing.Size(22, 22);
+            this.selectOutputPath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.selectOutputPath.TabIndex = 13;
+            this.selectOutputPath.TabStop = false;
+            this.selectOutputPath.Click += new System.EventHandler(this.selectOutputPath_Click);
             // 
             // MainWindow
             // 
@@ -134,9 +180,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(542, 193);
+            this.ClientSize = new System.Drawing.Size(542, 235);
+            this.Controls.Add(this.selectOutputPath);
+            this.Controls.Add(this.selectJar);
+            this.Controls.Add(this.txtTSVReader);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.result);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtOutputPath);
             this.Controls.Add(this.selectFile);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -150,6 +200,8 @@
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainWindow_DragDrop);
             this.DragOver += new System.Windows.Forms.DragEventHandler(this.MainWindow_DragOver);
             ((System.ComponentModel.ISupportInitialize)(this.selectFile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectJar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectOutputPath)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,8 +216,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox selectFile;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtOutputPath;
         private System.Windows.Forms.TextBox result;
+        private System.Windows.Forms.TextBox txtTSVReader;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox selectJar;
+        private System.Windows.Forms.PictureBox selectOutputPath;
     }
 }
 

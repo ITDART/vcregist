@@ -9,27 +9,31 @@ namespace app
 {
     public class Tsvreader
     {
-        public Tsvreader(string registerDate,string inputFilePath)
+        private string _extractInfoPath;
+        private string _outputPath;
+
+        public Tsvreader()
         {
-            if (!File.Exists(inputFilePath))
-            {
-                throw new FileNotFoundException(inputFilePath + "は存在しません");
-            }
-            RegisterDate = registerDate;
-            InputFilePath = inputFilePath;
-            ExtractInfoPath = AppSettings.Get("ExtractInfoPath");
-            OutputPath = AppSettings.Get("OutputPath");
+
+            ExtractInfoPath = Properties.Settings.Default.ExtractInfoPath;
+            OutputPath = Properties.Settings.Default.OutputPath;
 
         }
 
-        public void Run()
+        public void Run(string registerDate, string inputFilePath)
         {
-            //TODO:JARファイルの指定方法、出力ファイルの指定方法
+            if (!File.Exists(inputFilePath))
+            {
+                　Output = inputFilePath + "は存在しません";
+                return;
+            }
+            RegisterDate = registerDate;
+            InputFilePath = inputFilePath;
+
             const string command = "java";
             var psInfo = new ProcessStartInfo
             {
                 FileName = command,
-                //TODO:出力先のパス設定は外部に持たせる
                 Arguments =
                     $@"-jar {ExtractInfoPath} {RegisterDate} ""{InputFilePath}"" ""{OutputPath}""",
                 CreateNoWindow = true,
@@ -49,8 +53,28 @@ namespace app
 
         public string RegisterDate { get; set; }
 
-        public string OutputPath { get; set; }
-        public string ExtractInfoPath { get; set; }
+        public string OutputPath
+        {
+            get { return _outputPath; }
+            set
+            {
+                _outputPath = value;
+                Properties.Settings.Default.OutputPath = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
+        public string ExtractInfoPath
+        {
+            get { return _extractInfoPath; }
+            set
+            {
+                _extractInfoPath = value;
+                Properties.Settings.Default.ExtractInfoPath = value;
+                Properties.Settings.Default.Save();
+            }
+        }
+
         public string Output { get; set; }
     }
 }

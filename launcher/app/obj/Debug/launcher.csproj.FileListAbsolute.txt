@@ -15,3 +15,4 @@ C:\Users\t.yamatoya\Documents\vcregist\launcher\app\obj\Debug\launcher.csproj.Ge
 C:\Users\t.yamatoya\Documents\vcregist\launcher\app\obj\Debug\app.exe
 C:\Users\t.yamatoya\Documents\vcregist\launcher\app\obj\Debug\app.pdb
 C:\Users\t.yamatoya\Documents\vcregist\launcher\app\bin\Debug\app.exe.config
+C:\Users\t.yamatoya\Documents\vcregist\launcher\app\bin\Debug\App.config
