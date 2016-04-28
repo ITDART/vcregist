@@ -1,0 +1,8 @@
+E:\ITDART\launcher\app\bin\Debug\app.exe
+E:\ITDART\launcher\app\bin\Debug\app.pdb
+E:\ITDART\launcher\app\obj\Debug\launcher.csprojResolveAssemblyReference.cache
+E:\ITDART\launcher\app\obj\Debug\app.mainWindow.resources
+E:\ITDART\launcher\app\obj\Debug\app.Properties.Resources.resources
+E:\ITDART\launcher\app\obj\Debug\launcher.csproj.GenerateResource.Cache
+E:\ITDART\launcher\app\obj\Debug\app.exe
+E:\ITDART\launcher\app\obj\Debug\app.pdb

@@ -1,0 +1,16 @@
+D:\work\20160427_date\app\app\bin\Debug\app.exe
+D:\work\20160427_date\app\app\bin\Debug\app.pdb
+D:\work\20160427_date\app\app\obj\Debug\app.csprojResolveAssemblyReference.cache
+D:\work\20160427_date\app\app\obj\Debug\app.Properties.Resources.resources
+D:\work\20160427_date\app\app\obj\Debug\app.csproj.GenerateResource.Cache
+D:\work\20160427_date\app\app\obj\Debug\app.exe
+D:\work\20160427_date\app\app\obj\Debug\app.pdb
+D:\work\20160427_date\app\app\obj\Debug\app.mainWindow.resources
+E:\ITDART\launcher\app\obj\Debug\app.exe
+E:\ITDART\launcher\app\obj\Debug\app.pdb
+E:\ITDART\launcher\app\bin\Debug\app.exe
+E:\ITDART\launcher\app\bin\Debug\app.pdb
+E:\ITDART\launcher\app\obj\Debug\app.csprojResolveAssemblyReference.cache
+E:\ITDART\launcher\app\obj\Debug\app.mainWindow.resources
+E:\ITDART\launcher\app\obj\Debug\app.Properties.Resources.resources
+E:\ITDART\launcher\app\obj\Debug\app.csproj.GenerateResource.Cache
