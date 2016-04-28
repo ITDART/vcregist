@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.selectFile = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.result = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.selectFile)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,6 +119,15 @@
             this.textBox1.Size = new System.Drawing.Size(353, 39);
             this.textBox1.TabIndex = 8;
             // 
+            // result
+            // 
+            this.result.Location = new System.Drawing.Point(5, 148);
+            this.result.Multiline = true;
+            this.result.Name = "result";
+            this.result.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.result.Size = new System.Drawing.Size(385, 36);
+            this.result.TabIndex = 9;
+            // 
             // MainWindow
             // 
             this.AllowDrop = true;
@@ -125,6 +135,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(542, 193);
+            this.Controls.Add(this.result);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.selectFile);
             this.Controls.Add(this.label3);
@@ -154,6 +165,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox selectFile;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox result;
     }
 }
 

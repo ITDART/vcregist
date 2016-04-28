@@ -6,3 +6,12 @@ E:\ITDART\launcher\app\obj\Debug\app.Properties.Resources.resources
 E:\ITDART\launcher\app\obj\Debug\launcher.csproj.GenerateResource.Cache
 E:\ITDART\launcher\app\obj\Debug\app.exe
 E:\ITDART\launcher\app\obj\Debug\app.pdb
+C:\Users\t.yamatoya\Documents\vcregist\launcher\app\bin\Debug\app.exe
+C:\Users\t.yamatoya\Documents\vcregist\launcher\app\bin\Debug\app.pdb
+C:\Users\t.yamatoya\Documents\vcregist\launcher\app\obj\Debug\launcher.csprojResolveAssemblyReference.cache
+C:\Users\t.yamatoya\Documents\vcregist\launcher\app\obj\Debug\app.MainWindow.resources
+C:\Users\t.yamatoya\Documents\vcregist\launcher\app\obj\Debug\app.Properties.Resources.resources
+C:\Users\t.yamatoya\Documents\vcregist\launcher\app\obj\Debug\launcher.csproj.GenerateResource.Cache
+C:\Users\t.yamatoya\Documents\vcregist\launcher\app\obj\Debug\app.exe
+C:\Users\t.yamatoya\Documents\vcregist\launcher\app\obj\Debug\app.pdb
+C:\Users\t.yamatoya\Documents\vcregist\launcher\app\bin\Debug\app.exe.config
